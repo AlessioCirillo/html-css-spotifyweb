@@ -16,19 +16,52 @@
   display: flex;
 }
 
-.footer{
-  background: #444;
-
-/* debug */
-height: 80px;
-}
-
 .sidebar{
+  display: flex;
+  flex-direction: column;
   background: black;
   flex-basis: 230px;
 }
 
-.content{
-  background: gray;
+.top-sidebar{
   flex-grow: 1;
+}
+
+.account{
+  height: 50px;
+  border-top: 1px solid #fff;
+}
+
+.content{
+  position: relative;
+  flex-grow: 1;
+}
+
+.top-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(8, 11, 17, 0.5);
+  z-index: 1;
+
+  /* debug */
+  height: 90px;
+}
+
+.scrollable{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 90px 16px 0 16px;
+  background: gray;
+}
+.footer{
+  background: #444;
+
+  /* debug */
+  height: 80px;
 }
