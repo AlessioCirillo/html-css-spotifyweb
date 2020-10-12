@@ -372,6 +372,7 @@ ul{
   display: flex;
   align-items: center;
   flex-basis: 230px;
+  padding: 10px;
 }
 
 .button{
@@ -486,11 +487,6 @@ ul{
     flex-basis: calc(100% / 2 - 10px);
   }
 
-  .song,
-  .functions{
-    flex-basis: 200px;
-  }
-
   .song img{
     width: 40px;
   }
@@ -499,7 +495,23 @@ ul{
     text-align: center;
   }
 
+  .player-button i{
+    font-size: 18px;
+  }
+
+  .player-button a{
+    margin: 5px;
+  }
+
+  .player-button .play-button{
+    margin: 0 7px;
+  }
+
+  .play-button .fa-play-circle{
+    font-size: 28px;
+  }
+
   .player-bar .barra{
-   width: 70%;
+   width: 65%;
   }
 }
